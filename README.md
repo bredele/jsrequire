@@ -12,7 +12,6 @@ Require a javascript module or JSON file given a single path. IF both JSON and J
 ```js
 var jsrequire = require('jsrequire')
 
-
 jsrequire(__dirname + '/mymodule')
 ```
 

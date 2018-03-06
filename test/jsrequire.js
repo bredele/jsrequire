@@ -31,3 +31,16 @@ test('should read path and return js if both js and json file exist', assert => 
     name: 'testjs'
   })
 })
+
+test('should work with relative path', assert => {
+  assert.plan(2)
+  const json = read('./other')
+  assert.deepEqual(json, {
+    name: 'otherjson'
+  })
+
+  const other = read('other')
+  assert.deepEqual(other, {
+    name: 'otherjson'
+  })
+})
