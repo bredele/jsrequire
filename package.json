@@ -1,6 +1,6 @@
 {
   "name": "jsrequire",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Require javascript or json given a single path",
   "main": "index.js",
   "directories": {
