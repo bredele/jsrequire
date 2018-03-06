@@ -1,9 +1,19 @@
 
 
-module.exports = (path) => {
+/**
+ * Require Javacript modul or JSON file at a given path.
+ *
+ * Javascript module takes precendence over JSON and will be returned
+ * if both JSON and Javascript files exist.
+ *
+ * @param {String} path
+ * @return javacript module or json object
+ * @api public
+ */
+
+module.exports = path => {
   const js = read(path + '.js')
-  const json = read(path + '.json')
-  return js == null ? json : js
+  return js == null ? read(path + '.json') : js
 }
 
 
