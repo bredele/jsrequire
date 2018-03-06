@@ -5,14 +5,21 @@
   [![Downloads](https://img.shields.io/npm/dm/jsrequire.svg)](http://npm-stat.com/charts.html?package=jsrequire)
   [![pledge](https://bredele.github.io/contributing-guide/community-pledge.svg)](https://github.com/bredele/contributing-guide/blob/master/guidelines.md)
 
-Require a javascript module or JSON file given a single path. IF both JSON and JS files exist, the javascript modules will be returned.
+Require a javascript module or JSON file given a single path. If both JSON and JS files exist, the priority comes to the javascript module that will be returned.
 
 ## Usage
 
 ```js
 var jsrequire = require('jsrequire')
 
+
+//relative path
+jsrequire('mymodule')
+jsrequire('./mymodule')
+
+// absolute path
 jsrequire(__dirname + '/mymodule')
+
 ```
 
 
