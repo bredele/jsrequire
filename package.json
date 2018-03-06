@@ -1,0 +1,27 @@
+{
+  "name": "jsrequire",
+  "version": "1.0.0",
+  "description": "Require javascript or json given a single path",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/jsrequire.git"
+  },
+  "keywords": [
+    "require",
+    "javascript",
+    "json"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/jsrequire/issues"
+  },
+  "homepage": "https://github.com/bredele/jsrequire#readme"
+}
