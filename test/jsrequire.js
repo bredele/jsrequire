@@ -22,3 +22,12 @@ test('should read js at given path', assert => {
     name: 'foo'
   })
 })
+
+
+test('should read path and return js if both js and json file exist', assert => {
+  assert.plan(1)
+  const json = read(__dirname + '/test')
+  assert.deepEqual(json, {
+    name: 'testjs'
+  })
+})
